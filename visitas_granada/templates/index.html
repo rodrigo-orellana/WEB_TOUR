@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  	<!-- *******************************INICIO BODY*************************************** -->
+  	<!--
+  		XS <575
+  		SM 575 - 767 (smal) 
+  		MD 768 - 991 (medium) tablet
+  		LG 992 - 1199 (larg) pc antiguos o tablet
+  		XL 1200 >            pc
+  	-->
+    <h1>Hello, world! {{ foo.2.nombre }} {{ foo.2.foto }}</h1>
+    <img src="{{ MEDIA }}{{ foo.2.foto }}">
+     {% for i in foo %}
+     {{i.nombre}}
+      {% endfor %}
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-12 col-sm-6  col-md-8  col-lg-4 col-xl-8 d-none d-sm-block border"><p>uno</p></div> <!-- none para la medida y superiores-->
+    		<div class="col-12 col-sm-6  col-md-4  col-lg-4 col-xl-2 border" ><p>dos</p></div>
+    		<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2 border"><p>tres</p></div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- *******************************FIN BODY*************************************** -->
+  </body>
+</html>
